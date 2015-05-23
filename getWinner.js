@@ -29,19 +29,6 @@
             return cells[i][0];
         }
     }
-
+console.log('I m on line');
 
 }
- var winnerEl = document.querySelector('.winner-message');
-
- var winner = getWinner();
-
- if (winner == 'x') { alert('Cross');
-    winnerEl.innerHTML = 'Cross';
- }
-
- else if (winner == 'o') { alert('Zero');
-     winnerEl.innerHTML = 'Zero';
- }
- //
- else { alert('All are winners');}
