@@ -1,5 +1,4 @@
-window.addEventListener('load',
-function getWinner() {
+ function getWinner() {
     var cellsD = document.querySelectorAll('.cell');
     var cells = [[], [], []];
     var i;
@@ -12,7 +11,6 @@ function getWinner() {
             if (el.classList.contains('o')) {
                 cells[i][j] = 'o';
             }
-
         }
     }
 
@@ -31,4 +29,19 @@ function getWinner() {
             return cells[i][0];
         }
     }
-});
+
+
+}
+ var winnerEl = document.querySelector('.winner-message');
+
+ var winner = getWinner();
+
+ if (winner == 'x') { alert('Cross');
+    winnerEl.innerHTML = 'Cross';
+ }
+
+ else if (winner == 'o') { alert('Zero');
+     winnerEl.innerHTML = 'Zero';
+ }
+ //
+ else { alert('All are winners');}
