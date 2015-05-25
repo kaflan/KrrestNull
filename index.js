@@ -36,7 +36,6 @@ window.addEventListener('load', function () {
                 winnerEl.innerHTML = 'Крестик победил';
             } else if (winner === 'o') {
                 winnerEl.innerHTML = "Нолик победил";
-            } else {  winnerEl.innerHTML= 'Ничья';
             }
         });
     }
